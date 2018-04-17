@@ -1,16 +1,59 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 body {
   background-image: url(Images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.intro {
-  height: 100%;
-  width: 100%;
-  margin: auto;
+.content {
+    height: 10em;
+    position: relative
+  }
+
+.content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #F9F3F4;
+  font-weight: lighter;
+  font-size: 40px;
+  text-shadow: 0px 0px 300px #000;
+}
+
+p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #F9F3F4;
+  font-weight: lighter;
+  font-size: 15px;
+  text-shadow: 0px 0px 300px #000;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: solid #F9F3F4 3px;
+  color: #F9F3F4;
+  text-decoration: none;
+  text-transform: uppercase;
 }
