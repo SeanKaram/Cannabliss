@@ -1,59 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
-body {
-  background-image: url(Images/bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background-image: url(Images/bg.png);
+	background-repeat: no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
 }
 
 .content {
-    height: 10em;
-    position: relative
-  }
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 28%;
+}
 
-.content {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
+.content h1 {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 600%;
+	font-weight: 100;
+	color: #E1EFE9;
+	line-height: 70%;
+}
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: #F9F3F4;
-  font-weight: lighter;
-  font-size: 40px;
-  text-shadow: 0px 0px 300px #000;
+.content p {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 170%;
+	font-weight: 100;
+	color: #E1EFE9;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 135%;
+	font-weight: 200;
+	color: #00ffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: solid #00ffff 2px;
+	padding: 10px 20px;
+	border-radius: 9px;
+	transition: all 0.5s;
+}
+
+.btn:hover {
+	color: #CBDFD6;
+	border: solid #CBDFD6 1px;
 }
 
 p {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color: #F9F3F4;
-  font-weight: lighter;
-  font-size: 15px;
-  text-shadow: 0px 0px 300px #000;
+	font-size: 200%;
+	line-height: 200%;
+	font-family: sans-serif;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  border-radius: 9px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: solid #F9F3F4 3px;
-  color: #F9F3F4;
-  text-decoration: none;
-  text-transform: uppercase;
+
+@media screen and (max-width: 900px) {
+	.content {
+		padding-bottom: 30%;
+	}
+	.content h1 {
+		font-size: 450%;
+	}
+	.content p {
+		font-size: 140%;
+	}
+	.btn {
+		font-size: 130%;
+		padding: 9px 17px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.content {
+		padding-bottom: 40%;
+	}
+	.content h1 {
+		font-size: 300%;
+	}
+	.content p {
+		font-size: 115%;
+	}
+	.btn {
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.content {
+		padding-bottom: 50%;
+	}
+	.content h1 {
+		font-size: 200%;
+	}
+	.content p {
+		font-size: 95%;
+	}
+	.btn {
+		font-size: 100%;
+		padding: 6px 14px;
+	}
 }
